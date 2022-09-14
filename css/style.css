@@ -44,7 +44,7 @@ ul{
 .boton-cuenta1{
     color: #000;
     text-decoration: none;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     transition: 0.4s;
 }
 .boton-cuenta1:hover{
@@ -66,10 +66,9 @@ ul{
     color: #fff;
 
 }
-/* .contenedor-cuentas a:hover{
-    text-decoration: underline;
-} */
+
 /* Home */
+
 .home-principal{
     background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/caja-amazon.jpg);
     background-repeat: no-repeat;
@@ -86,8 +85,9 @@ ul{
 }
 
 /* Seccion grid */
+
 .flex-column1{
-    height: 100vh;
+    height: 110vh;
     text-align: center;
 }
 .flex-column1 h2 {
@@ -106,19 +106,66 @@ ul{
     color: #000;
 }
 
+/* Logins */
+
+.seccion-login{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(90deg,  rgba(88,133,178,1), rgba(11,21,30,1) 100%);  */
+    color: #000;
+}
+.contenedor-logins{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.logins-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logins-flex-icon{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+.logins-flex-p{
+    text-align: center;
+}
+.logins-flex-a{
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    width: 200px;
+    background-color: #0B151E;
+    padding: 7px;
+    text-align: center;
+}
+.logins-flex-a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0b151ebc;
+}
+
 /* Iconos y publi */
+
 .grid-2{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
     padding-left: 10%;
     padding-right: 10%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     column-gap: 2rem;
-    height: 40vh;
-    background:linear-gradient(to right ,#0B151E,#5885B2);
-    /* background:#0B151E; */
+    height: 30vh;
+    /* background: linear-gradient(90deg, rgba(11,21,30,1) , rgba(88,133,178,1) 100%);  */
+    background:#0B151E;
     color: #fff;
 }
 .contenedor-icon-text{
@@ -131,8 +178,6 @@ ul{
     margin-bottom:1rem ;
     margin-top:2rem ;
     font-weight: 500;
-    /* color:#091119 ; */
-
 }
 .contenedor-icon-text .p1{
     font-weight: bold;
@@ -141,8 +186,6 @@ ul{
     width: 100px;
     height: 100px;
     margin-bottom: 3rem;
-    /* border: 1px solid; */
-    /* border-radius: 5px; */
 }
 .img1{
     height: 250px;
@@ -153,16 +196,15 @@ ul{
 }
 
 /* Seccion Publicidad */
+
 .seccion-publicidad{
-    height: 25vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background:linear-gradient(to right ,#091119,#25282ad7); */
-    background:#0B151E;
-
+    /* background:#0B151E; */
+    background: linear-gradient(90deg, rgba(11,21,30,1) , rgba(88,133,178,1) 100%);
     color: #ffff;
-    /* margin-top: 5rem; */
 }
 .publicidad{
     text-align: center;
@@ -179,8 +221,8 @@ ul{
 
 /* Nosotros */
 #Nosotros{
-    height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/transporte.jpg);
+    height: 120vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/transporte.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -196,7 +238,12 @@ ul{
     margin-top:3rem ;
 
 }
-
+.img-nosotros{
+    width: 800px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
 .grid-nosotros{
     margin-top: 3rem;
     display: grid;
@@ -233,8 +280,24 @@ ul{
     margin-bottom: 2rem;
     padding: 0.5rem;
 }
+.form-control{
+    margin-bottom: 1rem;
+}
+.button1{
+    width: 300px;
+    border: none;
+    background-color: #0B151E;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+.button1:hover{
+    background-color: #0b151ebc;
+
+}
 
 /* Oficinas */
+
 .grid-3{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -242,14 +305,12 @@ ul{
     margin-left: 10%;
     margin-right: 10%;
     column-gap: 2rem;
-    /* height: 100vh; */
 }
 .contenedor-oficinas{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 70vh; */
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
@@ -263,7 +324,6 @@ ul{
 
 footer{
     bottom: 0;
-    /* border-top: solid 1px; */
     background: #F6F6F6;
     height: 10vh;
     display: flex;
