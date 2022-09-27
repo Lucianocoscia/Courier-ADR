@@ -415,3 +415,130 @@ footer{
 /* efecto card */
 /* box-shadow: 2px 6px 3px 3px rgb(0 0 0 / 30%);
     transition: all 400ms ease; */
+
+
+/* Cotizador */
+.cotizador{
+    min-height: 100%;
+}
+.contenedor-cotizador{
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow:2px 6px 3px 3px rgb(0 0 0 / 30%) ;
+    position: relative;
+}
+.contenedor-valor{
+    display: flex;    
+}
+.contenedor-valor label {
+    padding: 0.5rem;
+}
+.contenedor-valor-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+h5{
+    margin-bottom: 0;
+}
+
+
+.boton-agregar{
+    margin-left:15% ;
+    margin-right:15% ;
+    margin-top: 2rem;
+    border: none;
+    background-color: #0B151E;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+.contenedor-carrito{
+    margin-top: 2rem;
+    height: 250px;
+}
+.contenedor-principal{
+    min-height: 300px;
+    color: #fff;
+    width: 80%;
+}
+.table{
+    color:  #fff;
+}
+.cotizador-emoji{
+    color: #000;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding: 0.5rem;
+    border: none;
+    background-color: #ffff;
+    /* width: 10px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.carrito {
+    background-color: transparent;
+
+    visibility: hidden;
+    border-radius: 4px ;
+    z-index: 100;
+    overflow: auto;
+    scrollbar-color: #1e1e1e;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffff;
+}
+.carrito::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.carrito::-webkit-scrollbar-thumb {
+    background-color: #647BA5;
+}
+
+.carrito::-webkit-scrollbar {
+    width: 10px;
+}
+.carrito-visible{
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+    min-width: 30rem;
+    height: 100%;
+    
+    transition: 0.5s;
+    background-color:#0b151eeb; 
+    color: #F6F6F6;
+}
+.boton_cerrar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    /* border: 1px solid white; */
+    background-color: #0B151E;
+    color: #fff;
+    border-radius: 8px;
+    /* padding: 8px; */
+}
+.boton-eliminar{
+    transform: translateX(150px);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
