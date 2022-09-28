@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Data aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- Animaciones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Favicon -->
     <!-- <link  rel="shortcut icon" href="./images/logo-adr-sinfondo.png" type="image/x-icon"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/logo-adr-sinfondo.png"/>
@@ -38,7 +42,7 @@
             </ul>
         </nav>
         <div class="contenedor-cuentas">
-            <a class="boton-cuenta1" href="https://mlcourier.com/adrargentina/jc_registro.php">Registrate</a>
+            <a class="boton-cuenta1 li-registro" href="https://mlcourier.com/adrargentina/jc_registro.php">Registrate</a>
             <a class="boton-cuenta" href="https://mlcourier.com/adrargentina/client/">Login</a>
         </div>
     </header>
@@ -54,8 +58,8 @@
             </div>
         </section>
 
-        <section >
-            <div class="flex-column1">
+        <section  >
+            <div  data-aos-duration="2000" data-aos="zoom-in-down" class="flex-column1">
                 <h2>¿Como Funciona?</h2>
                 <div class="grid-1 ">
                     <div class="contenedor-icon-text">
@@ -81,51 +85,54 @@
         </section>
 
         <section id="Nosotros">
-            <div class=" container contenedor-nosotros">
+            <div data-aos-duration="1500" data-aos="zoom-up" class=" container contenedor-nosotros">
                 <h2>¿Quiénes somos?</h2>
                 <p>Somos una empresa de servicios de transporte internacional</p>
                 <p>Viví la experiencia de viajar con los sentidos a través de esos productos que te transportan a lo mejor de cada sitio. Primeras marcas de ropa para niños, tecnología de última generación, libros de ediciones únicas, vinilos inéditos, lo último de la moda en accesorios y mucho más.</p>
-                <img class="img-nosotros" src="./images/nosotros.jpg" alt="nosotros">
+                <img class="mt-5 img-nosotros" src="./images/nosotros.jpg" alt="nosotros">
             </div>
             <div class="grid-nosotros container ">
-                <div class="contenedor-texto-nosotros">
+                <div data-aos-duration="1500" data-aos="fade-up"  class="contenedor-texto-nosotros">
                     <h4>¿Que Ofrecemos?</h4>
                     <p>Ofrecemos un servicio puerta a puerta para que puedas comprar o enviar desde y hacia cualquier parte del mundo, los 365 días del año. En DelMundo Courier transportamos correspondencia, libros, discos, indumentaria, tecnología y todo tipo de carga área desde Argentina a todo el mundo y del mundo hacia Argentina.</p>
                 </div>
-                <div class="contenedor-texto-nosotros">
+                <div data-aos-duration="1500" data-aos="fade-up"  class="contenedor-texto-nosotros">
                     <h4>¿Que ventajas tenés?</h4>
                     <p>Podes comprar en cualquier parte del mundo, con los precios más competitivos del mercado al valor del cambio oficial. A través DelMundo podrás revivir tus viajes o encontrarte con experiencias que jamás viviste ahorrando dinero y tiempo.</p>
                 </div>
             </div>
         </section>
             
-        <section class="seccion-publicidad">
-            <div class="publicidad" >
+        <section  class="seccion-publicidad">
+            <div data-aos-duration="1500"  data-aos="fade-left" class="publicidad" >
                 <h4>¡Envíos a todo el mundo para personas y empresas!</h4>    
                 
             </div>
         </section>
 
-        <section class="grid-2 ">
-            <div class="contenedor-icon-text">
-                <img class="icono" src="./images/shipped.png"/>
+        <section >
+            <div data-aos-duration="1500" data-aos="zoom-up" class="grid-2 ">
+                <div class="contenedor-icon-text">
+                    <img class="icono" src="./images/shipped.png"/>
+    
+                    <h3>Rapido</h3>
+    
+                </div>
+                <div class="contenedor-icon-text">
+                    <img class="icono" src="./images/paquete.png"/>
+                    <h3>Eficiente</h3>
+                </div>
+                <div class="contenedor-icon-text">
+                    <img class="icono" src="./images/apreton-de-manos (1).png"/>
+                    <h3>Transparente</h3>
+                </div>
+            </div>
 
-                <h3>Rapido</h3>
-
-            </div>
-            <div class="contenedor-icon-text">
-                <img class="icono" src="./images/paquete.png"/>
-                <h3>Eficiente</h3>
-            </div>
-            <div class="contenedor-icon-text">
-                <img class="icono" src="./images/apreton-de-manos (1).png"/>
-                <h3>Transparente</h3>
-            </div>
         </section>
 
 
 
-        <section class="seccion-login">
+        <section data-aos-duration="1500" data-aos="fade-up"  class="seccion-login">
             <div class="contenedor-logins">
                 <div class="logins-flex">
                     <img class="logins-flex-icon" src="./images/user (1).png" alt="">
@@ -133,7 +140,7 @@
                     <a class="logins-flex-a" href="https://mlcourier.com/adrargentina/jc_registro.php">Registrarse</a>
                 </div>
     
-                <div class="logins-flex">
+                <div  class="logins-flex">
                     <img class="logins-flex-icon1" src="./images/login.png" alt="">
                     <p class="logins-flex-p">Ya tenes una cuenta? Inicia Sesión</p>
                     <a class="logins-flex-a" href="https://mlcourier.com/adrargentina/client/">Iniciar Sesion</a>
@@ -142,9 +149,10 @@
         </section>
 
 
-        <hr class="hr-width">
 
-        <section class="fondo-oficinas">
+
+        <section data-aos-duration="1500" data-aos="fade-up" class="fondo-oficinas">
+            <hr class="hr-width">
             <h2 class="text-center pb-5 pt-5">Donde Encontarnos</h2>
 
             <div class="grid">
@@ -152,15 +160,15 @@
                     <div class="flex">
                         <h2> Nuestras oficinas en Miami</h2>
                         <p>10300 NW 19th St Ste 111 Doral,  FL 33172</p>
-                        <span class="ml-1"><img class="" width="20px" height="20px" src="./images/whatsapp.png" alt="logo-wsp"> +54 9 11 5624-0618 </span>
+                        <a href="https://wa.link/i1lm1e" class="ml-1 a-wsp"><img class="" width="20px" height="20px" src="./images/whatsapp.png" alt="logo-wsp"> +54 9 11 5624-0618 </a>
                     </div>
                 </div>
                 <div class="iframe">
                     <iframe class="grid_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.3965977447965!2d-80.36727698517254!3d25.790486883623707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9353814e91d%3A0xa788441d7668062e!2s10300%20NW%2019th%20St%20%23111%2C%20Doral%2C%20FL%2033172%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1663189919299!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            
-            <div class="grid2">
+
+            <div data-aos-duration="1500" data-aos="zoom-up" class="grid2">
                 <div class="iframe">
                     <iframe class="grid_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.763297562695!2d-58.37779947404577!3d-34.610146517952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad49efdcbab%3A0x59cb1cbdfd0e94ba!2sAdolfo%20Alsina%20495%2C%20C1087AAE%20CABA!5e0!3m2!1ses!2sar!4v1663190070497!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -168,14 +176,16 @@
                     <div class="flex">
                         <h2>Nuestras oficinas en Buenos Aires</h2>
                         <p>ALSINA 495</p>
-                        <span><img width="20px" height="20px" src="./images/whatsapp.png" alt="logo-wsp"> +54 9 11 5624-0618 </span>
+                        <a href="https://wa.link/i1lm1e" class="a-wsp"><img width="20px" height="20px" src="./images/whatsapp.png" alt="logo-wsp"> +54 9 11 5624-0618 </a>
                     </div>
                 </div>
+            </div>
+            <!-- <hr class="hr-width pb-5"> -->
         </section>
 
-        <hr class="hr-width">
+        <hr class="hr-width ">
 
-        <section id="Contacto" class="seccion-form">
+        <section data-aos-duration="1500" data-aos="fade-up" id="Contacto" class="seccion-form">
             <div class="contenedor-form-text">
                 <h3>Tenes alguna duda? Contactanos!</h3>
                 <h4>Completa el siguiente formulario y a la brevedad nos contactaremos con usted.</h4>
@@ -207,9 +217,7 @@
     <footer>
         <p>© Copyright 2022, Luciano Coscia Developer</p>
         <div class="contenedor-redes">
-            <img class="img-footer" src="./images/facebook.png" alt="facebook">
-            <img class="img-footer" src="./images/whatsapp.png" alt="whatsapp">
-            <img class="img-footer" src="./images/instagram.png" alt="instagram">
+            <a href="https://wa.link/i1lm1e"><img class="img-footer"  src="../images/whatsapp.png" alt="whatsapp"></a>
             <div>
 
                 <a  href="#" ><span class=" flecha-arriba material-symbols-outlined">arrow_upward</span></a>
@@ -217,6 +225,10 @@
         </div>
     </footer>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 

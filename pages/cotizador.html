@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Data aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Favicon -->
     <!-- <link  rel="shortcut icon" href="./images/logo-adr-sinfondo.png" type="image/x-icon"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="../images/logo-adr-sinfondo.png"/>
@@ -38,24 +41,137 @@
             </ul>
         </nav>
         <div class="contenedor-cuentas">
-            <a class="boton-cuenta1" href="https://mlcourier.com/adrargentina/jc_registro.php">Registrate</a>
+            <a class="boton-cuenta1 li-registro" href="https://mlcourier.com/adrargentina/jc_registro.php">Registrate</a>
             <a class="boton-cuenta" href="https://mlcourier.com/adrargentina/client/">Login</a>
         </div>
     </header>
     <main>
         <section class="container cotizador">
 
-            <h1 class="text-center">Cotizador online de importación</h1>
-            <p class="text-center">Utiliza el siguiente cotizador online para obtener el costo de la importacion o compra en el exterior que quieras realizar</p>
+            <h1 class="text-center mt-5 ">Cotizador online de  importación</h1>
+            <p class="text-center">Utiliza el siguiente cotizador online para obtener el costo de la  importacion o compra en el exterior que quieras realizar</p>
             
-            <div class="contenedor-cotizador">
+        <div class="contenedor-cotizador-grid">
+
+            <div class="contenedor-cotizador1">
+                    <h3 class="text-center">Cotiza tu envio</h3>
+                    <div>
+                        <label for="">Seleccione una categoria de producto</label>
+                        <select  id="CategoriaElegida" class="form-select" aria-label="Default select example">
+                            <option  selected>Categorias</option>
+                            <option >Muebles</option>
+                            <option >Notebooks</option>
+                            <option >Celulares</option>
+                            <option >Auriculares</option>
+                            <option >Calzado</option>
+                            <option >Camaras de fotos</option>
+                            <option >Consolas Videojuegos</option>
+                            <option >Cristaleria</option>
+                            <option >Discos Solidos</option>
+                            <option >Drones</option>
+                            <option >Herramientas</option>
+                            <option >Juguetes</option>
+                            <option >Luces Led</option>
+                            <option >Mochilas</option>
+                            <option >Monitores</option>
+                            <option >Parlantes</option>
+                            <option >Repuestos Autos</option>
+                            <option >Smartwatch</option>
+                            <option >Tablets</option>
+                            <option >Termos</option>
+                        </select>
+                        <label for=""> Seleccione el lugar de entrega</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Retiro en......</option>
+                            <option value="1">Retiro en Sucursal</option>
+                            <option value="2">Envio a domicilio</option>
+                        </select>
+                        <div class="divs-valores">
+                            <label  for="">Ingrese el valor del producto en USD </label>
+                            <input id="ValorDeLaCompra" type="number" min= 0  oninput="validity.valid||(value='');">
+                        </div>
+   
+                        <div class="divs-valores">
+                            <label for="">Ingrese el peso del producto en KG</label>
+                            <input class="mover-input" id="PesoDeLaCompra" type="number" >
+                        </div>
+
+                    </div>
+                    <div class="contenedor-btn">
+                        <button id="BotonAgregar" class="boton-cotizar">Cotizar</button> 
+                    </div>
+  
+            </div>
+
+            <div class="contenedor-muestroDatos">
+                <div class="mb-2 pb-2 d-flex align-items-center">
+                    <label class="fw-bold" scope="col">Categoria :</label>
+                    <label class="inputCalculadora" for="" id="labelCategoriaElegida"> </label>
+                </div>
+
+                <hr class="">
+
+                <div class="mb-2 pb-2 d-flex align-items-center ">
+                    <label class="fw-bold">Envío :</label>
+                    <label class="inputCalculadora" id="labelEnvio"></label>
+                </div>
+
+                <hr class="">
+
+                <div class="mb-2 pb-2 d-flex align-items-center">
+                    <label class="fw-bold">Impuesto :</label>
+                    <label class="inputCalculadora" id="labelImpuesto"></label>
+                </div>
+
+                <hr class="">
+
+                <div class="mb-2 pb-2 d-flex align-items-center">
+                    <label class="fw-bold">COSTO TOTAL :</label>
+                    <label class="inputCalculadora" id="labelTotal"></label>
+                </div>
+
+                <div class="contenedor-btn">
+                    <button class="botonCotizador" ><a  href="https://wa.link/i1lm1e" class="a-wsp">Consultar</a></button>
+                </div>
+                <img class="logo-en-cotizador" src="../images/logo-adr-sinfondo.png" alt="logo">
+            </div>
+        </div>
+        </section>
+
+        <section data-aos-duration="1500" data-aos="zoom-up"  class="container contenedor-notas">
+            <p class="nota">NOTA: La calculadora da un estimado del precio total del envío. Nos reservamos el derecho a modificar precios o porcentajes sin previo aviso. La misma contempla flete internacional, impuestos para nacionalizar (Derechos de importación, Tasa y Estadística, Impuestos internos e IVA) y la gestión aduanera. Recordá que todos los valores son al dólar oficial.</p>
+            <p class="nota">Algunos productos no están permitidos según AFIP para su importación a Argentina. Si tenes dudas sobre tu producto contáctanos vía WhatsApp.</p>
+            <p class="nota">Si el producto que queres cotizar no está en las categorías, o tenes dudas de cómo funciona.<a href="https://wa.link/i1lm1e" class="a-wsp fw-bold"> ¡Contactanos!</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>© Copyright 2022, Luciano Coscia Developer</p>
+        <div class="contenedor-redes">
+            <a href="https://wa.link/i1lm1e"><img class="img-footer"  src="../images/whatsapp.png" alt="whatsapp"></a>
+            <div>
+                <a  href="#" ><span class=" flecha-arriba material-symbols-outlined">arrow_upward</span></a>
+            </div>
+        </div>
+    </footer>
+    
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<!-- Link sweetAlert -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="../js/index.js" type="module"></script>
+</body>
+</html>
+
+<!-- Apunte de cotizador -->
+<!--             <div class="contenedor-cotizador">
 
                 <button id="botonCart"  class="cotizador-emoji">
                     <span class="material-symbols-outlined">
                         shopping_cart
-<!--                         <span id="cartIcon" class="material-symbols-outlined">
-           
-                        </span> -->
                     </span>
                 </button>
 
@@ -79,14 +195,14 @@
                         <label for="">Ingrese el valor de la compra</label>
                         <div class="contenedor-valor-input">
                             <h5 class="text-center">USD</h5>
-                            <input id="ValorDeLaCompra" type="number" min= 0 oninput="validity.valid||(value='');">
+                            <input id="ValorDeLaCompra" type="number" min= 0  oninput="validity.valid||(value='');">
                         </div>
     
                         <label for="">Ingrese el peso de la compra</label>
     
                         <div class="contenedor-valor-input">
                             <h5 class="text-center">Kg</h5>
-                            <input id="PesoDeLaCompra" type="number" min=0 oninput="validity.valid||(value='');">
+                            <input id="PesoDeLaCompra" type="number" min=0  oninput="validity.valid||(value='');">
                         </div>
     
                     </div>
@@ -99,28 +215,4 @@
                         close
                         </span>
                 </div>
-            </div>
-
-
-        </section>
-    </main>
-    <footer>
-        <p>© Copyright 2022, Luciano Coscia Developer</p>
-        <div class="contenedor-redes">
-            <img class="img-footer" src="../images/facebook.png" alt="facebook">
-            <img class="img-footer" src="../images/whatsapp.png" alt="whatsapp">
-            <img class="img-footer" src="../images/instagram.png" alt="instagram">
-            <div>
-
-                <a  href="#" ><span class=" flecha-arriba material-symbols-outlined">arrow_upward</span></a>
-            </div>
-        </div>
-    </footer>
-
-<!-- Link sweetAlert -->
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-<script src="../js/index.js"></script>
-</body>
-</html>
+            </div> -->
