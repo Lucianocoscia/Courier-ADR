@@ -50,13 +50,13 @@ agregarItem.addEventListener("click", () => {
       text: "Por favor complete todos los campos.",
     });
 
-  } else if(pesoDeLaCompra.value > 50 || valorFob.value > 1000){
+  } /* else if(pesoDeLaCompra.value > 50 || valorFob.value > 1000){
     Swal.fire({
       icon: "error",
       title: "Oops...",
       text: "Recorda que los topes son  U$S 1000 y hasta 50 Kgs por envío. ",
     });
-  } else {
+  } */ else {
 
       // De lo contrario tiene q realizar esta operacion
       let categoria = categorias.find((elemento) => elemento.nombre === categoriaElegida.value);
@@ -79,8 +79,20 @@ agregarItem.addEventListener("click", () => {
       let nuevaBase =
           baseMasImp +
           baseDerechos; /* genero una nueva base sumando la basederechos con la basemasimpuestos */
-
       console.log('nuevabase', nuevaBase);
+
+   // En el caso q tenga impuesto interno realiza esta operacion
+/*       let ImpInt = nuevaBase * parseFloat(categoria.impInterno) * 10000;
+      let ImpIntDiv = ((100) - (parseFloat(categoria.impInterno)) * (100)) / 100;
+      let impIntSegundaDivision = ImpInt / ImpIntDiv;
+
+      let ImpIntMultiplicacion = nuevaBase * parseFloat(impIntSegundaDivision);
+      let suma = ImpIntMultiplicacion + nuevaBase;
+
+      let final = suma * (parseFloat(1.3)) * (parseFloat(categoria.impInterno));
+      console.log('esto lo tengo q sumar a impuesto total', final); */
+
+
 
       // Realizo la suma de nuevaBase mas el iva
       let baseIva = nuevaBase * parseFloat(categoria.iva);
@@ -89,6 +101,10 @@ agregarItem.addEventListener("click", () => {
       // Resuelvo suma total de impuestos
       impuestoTotales = baseIva + baseMasImp;
       console.log('ImpTotales', impuestoTotales);
+
+      // Suma de impInterno con ImpTotal
+/*       let sumaImpuestoTotales = final + impuestoTotales;
+      console.log('ImputotalFianl' , sumaImpuestoTotales); */
 
       // Total de traer el producto es la suma del envio dependiendo del peso mas el total de impuestos
       totalTraerProducto = impuestoTotales + envio;
@@ -131,6 +147,8 @@ agregarItem.addEventListener("click", () => {
       categoriaElegida.value = "Categorias";
     }
 });
+
+
 
 
 

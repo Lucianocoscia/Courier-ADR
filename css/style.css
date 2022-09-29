@@ -8,6 +8,17 @@ body{
     color: black;
     background-color: #F6F6F6;
 }
+body::-webkit-scrollbar-track {
+    background-color: #0b151eb9;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:#0B151E ;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
 
 /* Header */
 header{
@@ -17,6 +28,7 @@ header{
     height: 17vh;
     background-color: #f6f6f6;
     top: 0;
+    font-size: 17px;
 }
 .logo-enlace{
     width: 200px;
@@ -72,6 +84,7 @@ ul{
     padding-right: 1rem;
     transition: .4s ease-in-out;
     opacity:1;
+
 }
 .navbar li a:hover{
     opacity: 0.5;  
@@ -112,25 +125,48 @@ ul{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover ;
+    background-attachment: fixed;
     height: 85vh;
     color: #ffff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .texto-home{
+    transform: translateY(50px);
     text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+.p-home{
+    /* transform: translateY(-90px); */
+    transform: translateY(50px);
+    font-size: 22px;
 }
 
 /* Seccion grid */
-
+.titulo-grid{
+    color: #0B151E;
+    font-size: 36px;
+    
+}
+.titulo-grid2{
+    font-size: 28px;
+}
+.p1{
+    font-size: 18px;
+}
+.p2{
+    font-size: 17px;
+}
 .flex-column1{
     height: 110vh;
     text-align: center;
 }
 .flex-column1 h2 {
     padding-top: 3rem;
-    color: #000;
+    /* color: #000; */
 }
 .grid-1{
     padding-top: 5rem;
@@ -182,6 +218,7 @@ ul{
 }
 .logins-flex-p{
     text-align: center;
+    font-size: 18px;
 }
 .logins-flex-a{
     color: #fff;
@@ -192,6 +229,8 @@ ul{
     background-color: #0B151E;
     padding: 7px;
     text-align: center;
+    font-size: 17px;
+    transition: .4s ease-in-out;
 }
 .logins-flex-a:hover{
     text-decoration: none;
@@ -268,12 +307,12 @@ ul{
 
 /* Nosotros */
 #Nosotros{
-    height: 120vh;
+    height: 110vh;
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/fondo-avion.webp);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     padding: 2rem;
     color: #f6f6f6;
 }
@@ -292,12 +331,11 @@ ul{
     border-radius: 8px;
 }
 .grid-nosotros{
-    margin-top: 3rem;
+    transform: translateY(300px);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
     column-gap: 1rem;
-    height: 30vh;
 }
 .contenedor-texto-nosotros{
     display: flex;
@@ -305,9 +343,21 @@ ul{
     justify-content: center;
     align-items: center;
 }
+.titulo-nosotros{
+    font-size: 36px;
+    padding: 0.5rem;
+    color: #ECA95A;
+}
+.p-nosotros{
+    font-size: 21px;
+    text-align: center;
+    padding: 0.5rem;
 
+}
 /* Contacto */
-
+.titulo-contacto{
+    font-size: 34px;
+}
 .seccion-form{
     height: 85vh;
     display: flex;
@@ -338,6 +388,8 @@ ul{
     color: #fff;
     border-radius: 8px;
     padding: 10px;
+    font-size: 17px;
+    transition: .4s ease-in-out;
 }
 .button1:hover{
     background-color: #0b151ebc;
@@ -345,15 +397,19 @@ ul{
 }
 
 /* Oficinas */
+.titulo-oficinas{
+    font-size: 36px;
+    text-align: center;
+}
 .grid {
-    height: 70vh;
+    height: 50vh;
     display: grid;
     grid-template-columns: 50vw 40vw ;
     grid-template-rows: repeat(1, 1fr);
     justify-content: center;
 }
 .grid2{
-    height: 70vh;
+    height: 50vh;
     display: grid;
     grid-template-columns: 40vw 50vw ;
     grid-template-rows: repeat(1, 1fr);
@@ -387,8 +443,12 @@ ul{
     margin-left: 5%;
     margin-right: 5%;
 }
-
-
+.flex p {
+    font-size: 17px;
+}
+.flex a {
+    font-size: 17px;
+}
 /* Footer */
 
 footer{
@@ -485,7 +545,7 @@ footer{
     background-color:#647BA5; 
     color: #647BA5;
     color: #fff;
-    padding: 1rem;
+    padding:2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,12 +555,12 @@ footer{
     background-color:transparent; 
     border: none;
     color: #fff;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 .botonCotizador{
     width: 300px;
     /* padding-top: 10px; */
-    transform: translateY(10px);
+    transform: translateY(20px);
     border: none;
     background-color: #0B151E;
     color: #000;
@@ -558,14 +618,14 @@ hr{
 
 /* Notas del Cotizador */
 .nota{
-    font-size: 21px;
+    font-size: 19px;
     margin-bottom: 20px;
 }
 .contenedor-notas{
     margin-bottom: 5rem;
 }
 .cotizador p {
-    font-size: 21px;
+    font-size: 18px;
 }
 
 
