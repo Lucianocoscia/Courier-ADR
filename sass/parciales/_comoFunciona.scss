@@ -1,0 +1,42 @@
+/* Seccion grid */
+.titulo-grid{
+    color: #0B151E;
+    font-size: 36px;
+    
+}
+.titulo-grid2{
+    font-size: 28px;
+}
+.p1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.p2{
+    font-size: 17px;
+}
+.flex-column1{
+    height: 110vh;
+    text-align: center;
+}
+.flex-column1 h2 {
+    padding-top: 3rem;
+    /* color: #000; */
+}
+.grid-1{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    color: #000;
+}
+.img1{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}

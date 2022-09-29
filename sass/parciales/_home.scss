@@ -1,0 +1,26 @@
+/* Home */
+
+.home-principal{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/caja-amazon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+    height: 85vh;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-home{
+    transform: translateY(50px);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+.p-home{
+    /* transform: translateY(-90px); */
+    transform: translateY(50px);
+    font-size: 22px;
+}

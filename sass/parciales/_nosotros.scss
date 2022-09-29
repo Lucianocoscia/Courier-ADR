@@ -1,0 +1,42 @@
+/* Nosotros */
+#Nosotros{
+    height: 110vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/fondo-avion.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    color: #f6f6f6;
+}
+.contenedor-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem ;
+
+}
+.grid-nosotros{
+    transform: translateY(300px);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+}
+.contenedor-texto-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-nosotros{
+    font-size: 36px;
+    padding: 0.5rem;
+    color: #ECA95A;
+}
+.p-nosotros{
+    font-size: 21px;
+    text-align: center;
+    padding: 0.5rem;
+
+}
