@@ -50,13 +50,13 @@ agregarItem.addEventListener("click", () => {
       text: "Por favor complete todos los campos.",
     });
 
-  } /* else if(pesoDeLaCompra.value > 50 || valorFob.value > 1000){
+  } else if(pesoDeLaCompra.value > 50 || valorFob.value > 1000){
     Swal.fire({
       icon: "error",
       title: "Oops...",
       text: "Recorda que los topes son  U$S 1000 y hasta 50 Kgs por envío. ",
     });
-  } */ else {
+  } else {
 
       // De lo contrario tiene q realizar esta operacion
       let categoria = categorias.find((elemento) => elemento.nombre === categoriaElegida.value);
@@ -82,16 +82,12 @@ agregarItem.addEventListener("click", () => {
       console.log('nuevabase', nuevaBase);
 
    // En el caso q tenga impuesto interno realiza esta operacion
-/*       let ImpInt = nuevaBase * parseFloat(categoria.impInterno) * 10000;
-      let ImpIntDiv = ((100) - (parseFloat(categoria.impInterno)) * (100)) / 100;
-      let impIntSegundaDivision = ImpInt / ImpIntDiv;
-
-      let ImpIntMultiplicacion = nuevaBase * parseFloat(impIntSegundaDivision);
-      let suma = ImpIntMultiplicacion + nuevaBase;
-
-      let final = suma * (parseFloat(1.3)) * (parseFloat(categoria.impInterno));
-      console.log('esto lo tengo q sumar a impuesto total', final); */
-
+    let tasa = (parseFloat(categoria.impInterno) * 10000) / (100 - (parseFloat(categoria.impInterno)) * 100);
+    let tasa1 = tasa / 100;
+    let tasaPorNuevaBase = tasa1 * nuevaBase;
+    let tasa2 = tasaPorNuevaBase + nuevaBase;
+    let tasaFinal = tasa2 * parseFloat(1.3) * parseFloat(categoria.impInterno);
+    console.log("tasa final", tasaFinal);
 
 
       // Realizo la suma de nuevaBase mas el iva
@@ -103,11 +99,11 @@ agregarItem.addEventListener("click", () => {
       console.log('ImpTotales', impuestoTotales);
 
       // Suma de impInterno con ImpTotal
-/*       let sumaImpuestoTotales = final + impuestoTotales;
-      console.log('ImputotalFianl' , sumaImpuestoTotales); */
+      let totalImpuestos = impuestoTotales + tasaFinal;
+      console.log("total impuestos con tasa incluida", totalImpuestos);
 
       // Total de traer el producto es la suma del envio dependiendo del peso mas el total de impuestos
-      totalTraerProducto = impuestoTotales + envio;
+      totalTraerProducto = totalImpuestos + envio;
       console.log('Total', totalTraerProducto);
 
       // Muestro por consola el valor del producto q ingresaron
@@ -138,7 +134,7 @@ agregarItem.addEventListener("click", () => {
       labelEnvio.innerText = `U$S ${new Intl.NumberFormat().format(
         envio.toFixed(2)
       )}`;
-      labelImpuesto.innerText = `U$S ${impuestoTotales.toFixed(2)}`;
+      labelImpuesto.innerText = `U$S ${totalImpuestos.toFixed(2)}`;
       labelTotal.innerText = `U$S ${totalTraerProducto.toFixed(2)}`;
 
       // Borrar datos de input
