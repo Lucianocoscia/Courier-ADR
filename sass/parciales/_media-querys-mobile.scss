@@ -71,8 +71,11 @@
 
     // home
     .home-principal{
-        background-attachment: fixed;
         background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/caja-amazon.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover ;
+        background-attachment: fixed;
     }
     .texto-home{
         font-size: 30px;
