@@ -7,10 +7,15 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // align-content: center;
     color: #fff;
     background-color: #202320;
     background-color: #0B151E;
 }
+footer p {
+    margin-bottom: 0;
+}
+
 .flecha-arriba{
     margin-right: 1rem;
     margin-left: 1rem;

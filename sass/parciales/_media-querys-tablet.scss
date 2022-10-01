@@ -1,8 +1,11 @@
 @media screen and (max-width:1023px){
+
         main{
             overflow: hidden;
         }
+
         // Header
+
         header{
             justify-content: flex-start;
             width: 100%;
@@ -18,11 +21,9 @@
         .contenedor-icons-cuentas{
             display: flex;
             justify-content: center;
-            // align-items: center;
             margin: 0;
             height:46px ;
             width: 142px;
-            // height: 46px;
         }
         .contenedor-icons-cuentas li a {
             font-size: 40px;           
@@ -35,7 +36,6 @@
             color: #fff;
             font-size: 22px;
             text-align: justify;
-            // text-align: center;
             padding: 1rem;
 
         }
@@ -61,7 +61,7 @@
         }
         #lateral {
             display: block;
-            background-color: #0B151E;/* rgba(0, 0, 0, 0.8) */
+            background-color: #0B151E;
             width: 30%;
             height: 100vh;
     
@@ -86,28 +86,29 @@
             position: absolute;
             top: 0;
             left: 0;
-            // display: block;
         }
 
         // home
+
         .texto-home{
             font-size: 45px;
         }
         .p-home{
-            font-size: 26px;
+            font-size: 24px;
         }
 
         // Como funciona
 
         .flex-column1{
-            padding-top: 4rem;
-            height: 60vh;
-            
+            height: 100%;
         }
         .titulo-grid{
-            // font-size: 32px;
             margin: 0;
             padding-top: 1rem;
+            font-size: 34px;
+        }
+        .titulo-grid2{
+            font-size: 26px;
         }
         .grid-1 {
             column-gap: 0.3rem;
@@ -131,24 +132,26 @@
         }
 
         .p1{
-            font-size: 20px;
+            font-size: 18px;
             margin-top: 1rem;
 
         }
         .p2{
-            font-size: 18px;
+            font-size: 17px;
         }
 
         // Nosotros
+
         #Nosotros{
-            height: 60vh;
+            height: 100%;
+            padding: 1rem;
         }
         .contenedor-nosotros{
             margin: 0;
             padding: 0;
         }
         .titulo-nosotros{
-            font-size: 32px;
+            font-size: 34px;
             margin: 0;
         }
         .p-nosotros{
@@ -156,10 +159,13 @@
             margin-top: 0;
         }
         .grid-nosotros{
-            margin-top: 100px;
+            margin-top: 70px;
             text-align: center;
+            height: 100%;
         }
+
         // publicidad
+
         .seccion-publicidad{
             height: 50px;
         }
@@ -167,13 +173,36 @@
             overflow: hidden;
         }
         .grid-2{
-            height: 20vh;
+            height: 100%;
+            column-gap: 0.5rem;
         }
+        .titulo-publicidad{
+            font-size: 22px;
+        }
+        .texto-publicidad{
+            font-size: 24px;
+        }
+
         // Seccion login
+
         .seccion-login{
-            height: 30vh;
+            height: 100%;
+            padding: 1rem;
         }
+        .contenedor-logins{
+            column-gap: 1rem;
+        }
+        .img-login{
+            width: 70px;
+            height: 70px;
+        }
+
         // Oficinas
+
+        .seccion-oficinas{
+            height: 100%;
+            margin-bottom: 3rem;
+        }
         .titulo-oficinas{
             font-size: 32px;
             margin-bottom: 1rem;
@@ -190,99 +219,76 @@
         }
 
         //  Contacto
+
+        .seccion-form{
+            height: 100%;
+        }
         .titulo-contacto{
             font-size: 32px;
         }
         .contenedor-form-text h4{
             font-size: 20px;
         }
-/* 
-        // Home
-        .texto-home{
-            transform: none;
-            font-size: 2rem;
-        }
-        .p-home{
-            margin: 0;
-            transform: none;
-            font-size: 18px;
-        }
 
-        // Funciona
-        .flex-column1 h2{
-            // padding: 0;
-        }
-        .titulo-grid{
-            padding-top: 1.5rem;
-            margin-bottom: 1remrem;
-            font-size: 30px;
-            margin: 0;
-        }
-        .contenedor-icon-text h3{
-            margin: 0;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-            font-size: 20px;
-        }
+        // Cotizador
 
-        .grid-1{
-            margin-top: 2rem;
+        .contenedor-cotizador-grid{
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3,33&);
-            padding: 0;
-            margin-bottom: 40rem;
-        }
-        .img1{
-            width: 33%;
-            height: 70%;
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 3rem;
             margin: 0;
-            margin-top: 1rem;
+            padding: 0;
         }
-
-        .p1{
-            margin-bottom: 0.5rem ;
-            width: 50%;
+        .titulo-cotizador{
+            font-size: 28px;
+            margin-bottom: 1.5rem;
+        }
+        .cotizador p{
             font-size: 16px;
         }
-        .p2{
-            margin: 0;
-            width: 50%;
-            font-size: 16px;
-            margin-bottom: 3rem;
-        }
-        .contenedor-comofunciona{
-            height: 100vh;
-        }
-        .flex-column1{
-            height: 10vh;
-        }
-
-        // nosotros
-        #Nosotros{
-            padding: 0;
+        .contenedor-cotizador1{
             height: 100%;
-            margin-top: 12rem;
-        }
-        .contenedor-nosotros{
+            width: 100%;
             margin: 0;
+            margin-top: 1rem;
+        }
+        .boton-cotizar{
+            width: 100%;
+        }
+        .divs-valores{
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items:center;
+            text-align: center;
+        }
+        .contenedor-muestroDatos{
+            padding: 0;
             margin-bottom: 3rem;
         }
-        .titulo-nosotros{
-            padding: 0;
-            font-size:28px ;
-            margin: 0;
+        .div-muestrodatos{
+            padding: 0.5rem;
         }
-        .p-nosotros {
-            padding: 0;
-            margin: 0;
+        .mover-input{
+            transform: none;
+        }
+        .botonCotizador{
+            width: 94%;
+        }
+        .nota{
             font-size: 16px;
+            text-align: justify;
         }
-        .grid-nosotros {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2, 1fr);
+
+        // Footer 
+
+        footer p {
+            font-size: 16px;
+            margin-left: 0.5rem;
+        }
+        .img-footer{
+            width: 35px;
+            height: 35px;
             margin: 0;
-        } */
+        }
 
-
-    
 }

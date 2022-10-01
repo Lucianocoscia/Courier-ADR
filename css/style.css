@@ -144,7 +144,7 @@ ul {
 
 /* Home */
 .home-principal {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/caja-amazon.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/caja-amazon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -191,6 +191,7 @@ ul {
 
 .flex-column1 {
   height: 110vh;
+  height: 100%;
   text-align: center;
 }
 
@@ -203,6 +204,7 @@ ul {
   padding-top: 5rem;
   padding-left: 10%;
   padding-right: 10%;
+  margin-bottom: 4rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
@@ -223,7 +225,7 @@ ul {
 
 /* Nosotros */
 #Nosotros {
-  height: 110vh;
+  height: 105vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/fondo-avion.webp);
   background-position: top;
   background-repeat: no-repeat;
@@ -241,7 +243,7 @@ ul {
 }
 
 .grid-nosotros {
-  margin-top: 200px;
+  margin-top: 150px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -303,7 +305,7 @@ ul {
   grid-template-rows: 1fr;
   column-gap: 2rem;
   height: 35vh;
-  background: #0B151E;
+  background-color: #0B151E;
   color: #fff;
 }
 
@@ -338,16 +340,14 @@ ul {
   justify-content: center;
   align-items: center;
   color: #000;
-  background-color: #e6e7e8;
+  background-color: #E6E7E8;
 }
 
 .contenedor-logins {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  column-gap: 1rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  column-gap: 12rem;
 }
 
 .logins-flex {
@@ -393,10 +393,10 @@ ul {
   background-color: #0b151ebc;
 }
 
-.icono-logins {
-  font-size: 4rem;
-  text-align: center;
-  color: #0B151E;
+.img-login {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
 }
 
 /* Contacto */
@@ -519,6 +519,10 @@ footer {
   color: #fff;
   background-color: #202320;
   background-color: #0B151E;
+}
+
+footer p {
+  margin-bottom: 0;
 }
 
 .flecha-arriba {
@@ -761,7 +765,6 @@ hr {
   #lateral {
     display: block;
     background-color: #0B151E;
-    /* rgba(0, 0, 0, 0.8) */
     width: 30%;
     height: 100vh;
     position: fixed;
@@ -788,15 +791,18 @@ hr {
     font-size: 45px;
   }
   .p-home {
-    font-size: 26px;
+    font-size: 24px;
   }
   .flex-column1 {
-    padding-top: 4rem;
-    height: 60vh;
+    height: 100%;
   }
   .titulo-grid {
     margin: 0;
     padding-top: 1rem;
+    font-size: 34px;
+  }
+  .titulo-grid2 {
+    font-size: 26px;
   }
   .grid-1 {
     column-gap: 0.3rem;
@@ -819,21 +825,22 @@ hr {
     height: 100%;
   }
   .p1 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 1rem;
   }
   .p2 {
-    font-size: 18px;
+    font-size: 17px;
   }
   #Nosotros {
-    height: 60vh;
+    height: 100%;
+    padding: 1rem;
   }
   .contenedor-nosotros {
     margin: 0;
     padding: 0;
   }
   .titulo-nosotros {
-    font-size: 32px;
+    font-size: 34px;
     margin: 0;
   }
   .p-nosotros {
@@ -841,8 +848,9 @@ hr {
     margin-top: 0;
   }
   .grid-nosotros {
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
+    height: 100%;
   }
   .seccion-publicidad {
     height: 50px;
@@ -851,10 +859,29 @@ hr {
     overflow: hidden;
   }
   .grid-2 {
-    height: 20vh;
+    height: 100%;
+    column-gap: 0.5rem;
+  }
+  .titulo-publicidad {
+    font-size: 22px;
+  }
+  .texto-publicidad {
+    font-size: 24px;
   }
   .seccion-login {
-    height: 30vh;
+    height: 100%;
+    padding: 1rem;
+  }
+  .contenedor-logins {
+    column-gap: 1rem;
+  }
+  .img-login {
+    width: 70px;
+    height: 70px;
+  }
+  .seccion-oficinas {
+    height: 100%;
+    margin-bottom: 3rem;
   }
   .titulo-oficinas {
     font-size: 32px;
@@ -870,98 +897,70 @@ hr {
   .seccion-oficinas {
     padding-bottom: 2rem;
   }
+  .seccion-form {
+    height: 100%;
+  }
   .titulo-contacto {
     font-size: 32px;
   }
   .contenedor-form-text h4 {
     font-size: 20px;
   }
-  /* 
-        // Home
-        .texto-home{
-            transform: none;
-            font-size: 2rem;
-        }
-        .p-home{
-            margin: 0;
-            transform: none;
-            font-size: 18px;
-        }
-
-        // Funciona
-        .flex-column1 h2{
-            // padding: 0;
-        }
-        .titulo-grid{
-            padding-top: 1.5rem;
-            margin-bottom: 1remrem;
-            font-size: 30px;
-            margin: 0;
-        }
-        .contenedor-icon-text h3{
-            margin: 0;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-            font-size: 20px;
-        }
-
-        .grid-1{
-            margin-top: 2rem;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3,33&);
-            padding: 0;
-            margin-bottom: 40rem;
-        }
-        .img1{
-            width: 33%;
-            height: 70%;
-            margin: 0;
-            margin-top: 1rem;
-        }
-
-        .p1{
-            margin-bottom: 0.5rem ;
-            width: 50%;
-            font-size: 16px;
-        }
-        .p2{
-            margin: 0;
-            width: 50%;
-            font-size: 16px;
-            margin-bottom: 3rem;
-        }
-        .contenedor-comofunciona{
-            height: 100vh;
-        }
-        .flex-column1{
-            height: 10vh;
-        }
-
-        // nosotros
-        #Nosotros{
-            padding: 0;
-            height: 100%;
-            margin-top: 12rem;
-        }
-        .contenedor-nosotros{
-            margin: 0;
-            margin-bottom: 3rem;
-        }
-        .titulo-nosotros{
-            padding: 0;
-            font-size:28px ;
-            margin: 0;
-        }
-        .p-nosotros {
-            padding: 0;
-            margin: 0;
-            font-size: 16px;
-        }
-        .grid-nosotros {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2, 1fr);
-            margin: 0;
-        } */
+  .contenedor-cotizador-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+  .titulo-cotizador {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+  }
+  .cotizador p {
+    font-size: 16px;
+  }
+  .contenedor-cotizador1 {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .boton-cotizar {
+    width: 100%;
+  }
+  .divs-valores {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .contenedor-muestroDatos {
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  .div-muestrodatos {
+    padding: 0.5rem;
+  }
+  .mover-input {
+    transform: none;
+  }
+  .botonCotizador {
+    width: 94%;
+  }
+  .nota {
+    font-size: 16px;
+    text-align: justify;
+  }
+  footer p {
+    font-size: 16px;
+    margin-left: 0.5rem;
+  }
+  .img-footer {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -984,6 +983,7 @@ hr {
   }
   .navbar li a {
     color: #fff;
+    font-size: 18px;
   }
   .contenedor-cuentas {
     display: none;
@@ -1003,7 +1003,7 @@ hr {
     display: block;
     background-color: #0B151E;
     /* rgba(0, 0, 0, 0.8) */
-    width: 80%;
+    width: 60%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -1018,6 +1018,13 @@ hr {
   .span-icon {
     font-size: 2rem;
   }
+  .span-icon:target {
+    color: #000;
+    opacity: 0.6;
+  }
+  .span-icon:hover {
+    color: #000;
+  }
   .span-icono-close {
     font-size: 16px;
     visibility: visible;
@@ -1030,6 +1037,7 @@ hr {
     transform: none;
     font-size: 17px;
     text-align: center;
+    width: 95%;
   }
   .flex-column1 {
     height: 100%;
@@ -1039,7 +1047,7 @@ hr {
     padding-bottom: 2rem;
   }
   .titulo-grid2 {
-    font-size: 28px;
+    font-size: 26px;
   }
   .flex-column1 h2 {
     font-size: 30px;
@@ -1050,6 +1058,12 @@ hr {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 2rem;
+  }
+  .p1 {
+    font-size: 18px;
+  }
+  .p2 {
+    font-size: 16px;
   }
   #Nosotros {
     height: 100%;
@@ -1064,25 +1078,30 @@ hr {
   .titulo-nosotros {
     font-size: 30px;
   }
+  .p-nosotros {
+    font-size: 16px;
+  }
   .titulo-publicidad {
     font-size: 16px;
+    padding: 0.5rem;
   }
   .grid-2 {
     height: 100%;
     padding-left: 10%;
     padding-right: 10%;
     padding: 0;
+    column-gap: 0;
   }
   .icono {
-    height: 60px;
-    width: 60px;
-    margin: 1rem;
+    height: 50px;
+    width: 50px;
+    margin-top: 1rem;
   }
   .texto-publicidad {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .seccion-login {
     height: 100%;
@@ -1090,6 +1109,7 @@ hr {
   }
   .contenedor-logins {
     margin: 0;
+    column-gap: 1rem;
   }
   .icono-logins {
     font-size: 3rem;
@@ -1103,12 +1123,19 @@ hr {
     font-size: 12px;
     text-align: center;
   }
+  .img-login {
+    width: 50px;
+    height: 50px;
+  }
   .seccion-oficinas {
     height: 100%;
     margin-bottom: 3rem;
   }
   .titulo-oficinas {
     font-size: 26px;
+  }
+  .iframe {
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.356);
   }
   .grid {
     grid-template-columns: 1fr;
@@ -1129,9 +1156,11 @@ hr {
     padding: 0.5rem;
     margin-left: 5%;
     margin-right: 5%;
+    width: 95%;
   }
   .button1 {
     width: 80%;
+    font-size: 16px;
   }
   .titulo-contacto {
     font-size: 26px;
@@ -1140,16 +1169,13 @@ hr {
     font-size: 16px;
   }
   footer p {
-    font-size: 12px;
+    font-size: 14px;
+    margin-left: 0.5rem;
   }
   .img-footer {
     width: 30px;
     height: 30px;
     margin: 0;
-  }
-  .contenedor-cotizador-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
   }
 }
 

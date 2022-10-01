@@ -2,7 +2,6 @@
     // Header
     header{
         justify-content: flex-start;
-        // height: 20vh;
     }
     .logo-enlace{
         height: 180px;
@@ -21,6 +20,7 @@
     }
     .navbar li a {
         color: #fff;
+        font-size: 18px;
     }
     .contenedor-cuentas{
         display: none;
@@ -39,7 +39,7 @@
     #lateral {
         display: block;
         background-color: #0B151E;/* rgba(0, 0, 0, 0.8) */
-        width: 80%;
+        width: 60%;
         height: 100vh;
 
         position: fixed;
@@ -57,12 +57,20 @@
     .span-icon{
         font-size: 2rem;
     }
+    .span-icon:target{
+        color: #000;
+        opacity: 0.6;
+    }
+    .span-icon:hover{
+        color: #000;
+    }
     .span-icono-close{
         font-size: 16px;
         visibility: visible;
-        // display: block;
     }
+
     // home
+
     .texto-home{
         font-size: 30px;
         transform: none;
@@ -71,9 +79,11 @@
         transform: none;
         font-size: 17px;
         text-align: center;
+        width: 95%;
     }
 
     // Como funciona
+
     .flex-column1{
         height: 100%;
     }
@@ -82,7 +92,7 @@
         padding-bottom: 2rem;
     }
     .titulo-grid2{
-        font-size: 28px;
+        font-size: 26px;
     }
     .flex-column1 h2{
         font-size: 30px;
@@ -94,8 +104,15 @@
         grid-template-rows: repeat(3, 1fr);
         row-gap: 2rem;
     }
+    .p1{
+        font-size: 18px;
+    }
+    .p2{
+        font-size: 16px;
+    }
 
     // Nosotros
+
     #Nosotros{
         height: 100%;
         padding: 1rem;
@@ -109,36 +126,44 @@
     .titulo-nosotros{
         font-size: 30px ;
     }
+    .p-nosotros{
+        font-size: 16px;
+    }
 
     // Publicidad
+
     .titulo-publicidad{
         font-size: 16px;
+        padding: 0.5rem;
     }
     .grid-2{
         height: 100%;
         padding-left: 10%;
         padding-right: 10%;
         padding: 0;
-        // align-items: center;
+        column-gap: 0;
     }
     .icono{
-        height: 60px;
-        width: 60px;
-        margin: 1rem;
+        height: 50px;
+        width: 50px;
+        margin-top: 1rem;
     }
     .texto-publicidad{
-        font-size: 12px;
+        font-size: 16px;
         margin: 0;
         padding: 0;
-        padding: 1rem;
+        padding: 0.5rem;
     }
+
     // Logins
+
     .seccion-login{
         height: 100%;
         padding: 1rem;
     }
     .contenedor-logins{
         margin: 0;
+        column-gap: 1rem;
  
     }
     .icono-logins{
@@ -146,7 +171,6 @@
     }
     .logins-flex-p{
         font-size: 16px;
-        // display: none;
     }
 
     .logins-flex-a{
@@ -155,7 +179,10 @@
         font-size: 12px;
         text-align: center;
     }
-
+    .img-login{
+        width: 50px;
+        height: 50px;
+    }
 
     // Oficinas
 
@@ -166,6 +193,9 @@
     .titulo-oficinas{
         font-size: 26px;
     }
+    .iframe{
+        box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.356);
+    }
     .grid{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -173,7 +203,9 @@
         height: 100%;
 
     }
+
     // Contacto
+
     .seccion-form{
         height: 100%;
         margin: 0;
@@ -187,9 +219,11 @@
         padding: 0.5rem;
         margin-left: 5%;
         margin-right: 5%;
+        width: 95%;
     }
     .button1{
         width: 80%;
+        font-size: 16px;
     }
     .titulo-contacto{
         font-size: 26px;
@@ -197,20 +231,17 @@
     .contenedor-form-text h4{
         font-size: 16px;
     }
+
     // Footer
+
     footer p {
-        font-size: 12px;
+        font-size: 14px;
+        margin-left: 0.5rem;
     }
     .img-footer{
         width: 30px;
         height: 30px;
         margin: 0;
-    }
-
-    // Cotizador
-    .contenedor-cotizador-grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
     }
 
 }

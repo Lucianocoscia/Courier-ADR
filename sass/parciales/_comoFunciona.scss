@@ -16,6 +16,7 @@
 }
 .flex-column1{
     height: 110vh;
+    height: 100%;
     text-align: center;
 }
 .flex-column1 h2 {
@@ -26,6 +27,7 @@
     padding-top: 5rem;
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 4rem ;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 2rem;
