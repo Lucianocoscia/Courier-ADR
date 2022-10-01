@@ -191,6 +191,7 @@ ul {
 
 .flex-column1 {
   height: 110vh;
+  /* si quiero q complete la vista  */
   height: 100%;
   text-align: center;
 }
@@ -226,6 +227,8 @@ ul {
 /* Nosotros */
 #Nosotros {
   height: 105vh;
+  /* si quiero q complete la vista */
+  height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/fondo-avion.webp);
   background-position: top;
   background-repeat: no-repeat;
@@ -305,6 +308,8 @@ ul {
   grid-template-rows: 1fr;
   column-gap: 2rem;
   height: 35vh;
+  /* si quiero q complete la vista  */
+  height: 100%;
   background-color: #0B151E;
   color: #fff;
 }
@@ -336,6 +341,9 @@ ul {
 /* Logins */
 .seccion-login {
   height: 57vh;
+  /* si quiero q complete la vista */
+  height: 100%;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,6 +414,8 @@ ul {
 
 .seccion-form {
   height: 100vh;
+  /* si quiero q complete la vista  */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1046,12 +1056,16 @@ hr {
     min-height: 100%;
     padding-bottom: 2rem;
   }
+  .titulo-grid {
+    padding: 1rem;
+  }
   .titulo-grid2 {
     font-size: 26px;
   }
   .flex-column1 h2 {
     font-size: 30px;
     padding: 0;
+    padding-top: 2rem;
     margin: 0;
   }
   .grid-1 {

@@ -1,7 +1,9 @@
 /* Logins */
 
 .seccion-login{
-    height: 57vh;
+    height: 57vh; /* si quiero q complete la vista */
+    height: 100%;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;  

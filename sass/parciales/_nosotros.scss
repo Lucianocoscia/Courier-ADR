@@ -1,6 +1,7 @@
 /* Nosotros */
 #Nosotros{
-    height: 105vh;
+    height: 105vh; /* si quiero q complete la vista */
+    height: 100%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/fondo-avion.webp);
     background-position: top;
     background-repeat: no-repeat;
