@@ -1,0 +1,216 @@
+@media screen and (max-width:600px) {
+    // Header
+    header{
+        justify-content: flex-start;
+        // height: 20vh;
+    }
+    .logo-enlace{
+        height: 180px;
+    }
+    .navbar{
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+
+        font-size: 16px;
+        color: #fff;
+    }
+    .navbar li a {
+        color: #fff;
+    }
+    .contenedor-cuentas{
+        display: none;
+    }
+    .span-icon-cuenta{
+        display: block;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-right: 1rem;
+        border: transparent;
+        color: #000;
+    }
+    #lateral {
+        display: block;
+        background-color: #0B151E;/* rgba(0, 0, 0, 0.8) */
+        width: 80%;
+        height: 100vh;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100 ;
+
+        transition: right 1s;
+    }
+    #lateral:target{
+        right: 0;
+
+        color: #fff;
+    }
+    .span-icon{
+        font-size: 2rem;
+    }
+    .span-icono-close{
+        font-size: 16px;
+        visibility: visible;
+        // display: block;
+    }
+    // home
+    .texto-home{
+        font-size: 30px;
+        transform: none;
+    }
+    .p-home{
+        transform: none;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    // Como funciona
+    .flex-column1{
+        height: 100%;
+    }
+    .contenedor-comofunciona{
+        min-height: 100%;
+        padding-bottom: 2rem;
+    }
+    .titulo-grid2{
+        font-size: 28px;
+    }
+    .flex-column1 h2{
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    .grid-1{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 2rem;
+    }
+
+    // Nosotros
+    #Nosotros{
+        height: 100%;
+        padding: 1rem;
+    }
+    .grid-nosotros{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100%;
+    }
+    .titulo-nosotros{
+        font-size: 30px ;
+    }
+
+    // Publicidad
+    .titulo-publicidad{
+        font-size: 16px;
+    }
+    .grid-2{
+        height: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding: 0;
+        // align-items: center;
+    }
+    .icono{
+        height: 60px;
+        width: 60px;
+        margin: 1rem;
+    }
+    .texto-publicidad{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        padding: 1rem;
+    }
+    // Logins
+    .seccion-login{
+        height: 100%;
+        padding: 1rem;
+    }
+    .contenedor-logins{
+        margin: 0;
+ 
+    }
+    .icono-logins{
+        font-size: 3rem;
+    }
+    .logins-flex-p{
+        font-size: 16px;
+        // display: none;
+    }
+
+    .logins-flex-a{
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    // Oficinas
+
+    .seccion-oficinas{
+        height: 100%;
+        margin-bottom: 3rem;
+    }
+    .titulo-oficinas{
+        font-size: 26px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 3rem;
+        height: 100%;
+
+    }
+    // Contacto
+    .seccion-form{
+        height: 100%;
+        margin: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    .contenedor-form-text{
+        padding: 0.5rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .button1{
+        width: 80%;
+    }
+    .titulo-contacto{
+        font-size: 26px;
+    }
+    .contenedor-form-text h4{
+        font-size: 16px;
+    }
+    // Footer
+    footer p {
+        font-size: 12px;
+    }
+    .img-footer{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+
+    // Cotizador
+    .contenedor-cotizador-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}

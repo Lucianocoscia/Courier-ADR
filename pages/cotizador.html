@@ -32,11 +32,19 @@
 <body>
     <header>
         <a class="logo-enlace" href="../index.html"><img class="logo" src="../images/logo-adr-sinfondo.png" alt="logo"></a>
-        <nav>
+        <nav id="lateral">
             <ul class="navbar">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../index.html#Nosotros">Nosotros</a></li>
                 <li><a href="../index.html#Contacto">Contacto</a></li>
+                <div class="contenedor-icons-cuentas">
+                    <li><a class="span-icon-cuenta material-symbols-outlined " href="https://mlcourier.com/adrargentina/jc_registro.php">person</a></li>
+                    <li><a class="span-icon-cuenta material-symbols-outlined" href="https://mlcourier.com/adrargentina/client/">login</a></li>
+                </div>
+
+                <li><a href="#"><span class=" span-icono-close material-symbols-outlined">
+                    close
+                    </span></a></li>
                 <li><a href="#">Cotizador</a></li>
             </ul>
         </nav>
@@ -44,11 +52,15 @@
             <a class="boton-cuenta1 li-registro" href="https://mlcourier.com/adrargentina/jc_registro.php">Registrate</a>
             <a class="boton-cuenta" href="https://mlcourier.com/adrargentina/client/">Login</a>
         </div>
+                <!-- Menu Hamburguesa -->
+                <a href="#lateral" class="boton menu"><span class="span-icon  material-symbols-outlined">
+                    menu
+                    </span></a>
     </header>
     <main>
         <section data-aos-duration="1500" data-aos="zoom-up" class="container cotizador">
 
-            <h1 class="text-center mt-4 ">Cotizador online de  importación</h1>
+            <h1 class="text-center titulo-cotizador ">Cotizador online de  importación</h1>
             <p class="text-center mt-2 mb-4">Utilizá el siguiente cotizador online para obtener el costo de la  importación o compra en el exterior que quieras realizar.</p>
             
         <div class="contenedor-cotizador-grid">
@@ -82,9 +94,9 @@
                         </select>
                         <label for=""> Seleccione el lugar de entrega</label>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>Retiro en......</option>
-                            <option value="1">Retiro en Sucursal</option>
-                            <option value="2">Envio a domicilio</option>
+                            <option selected>Envío a....</option>
+                            <option value="1">Envio a  CABA y GBA</option>
+                            <option value="2">Envio al interior</option>
                         </select>
                         <div class="divs-valores">
                             <label  for="">Ingrese el valor del producto en USD </label>

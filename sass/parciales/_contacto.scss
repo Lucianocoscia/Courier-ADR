@@ -3,13 +3,16 @@
     font-size: 34px;
 }
 .seccion-form{
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+
+    padding-bottom: 4rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    background-color:#e6e7e8; 
 }
 .contenedor-form-text{
     display: flex;
@@ -18,7 +21,7 @@
     text-align: center;
     padding: 2rem;
     width: 80%;
-    // background-color: #647BA5;
+    background-color: #f6f6f6;
     box-shadow: 3px 1px 20px 6px rgba(0, 0, 0, 0.356);
 }
 .contenedor-form-text h3{

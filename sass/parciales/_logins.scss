@@ -1,11 +1,12 @@
 /* Logins */
 
 .seccion-login{
-    height: 40vh;
+    height: 57vh;
     display: flex;
     justify-content: center;
     align-items: center;  
     color: #000;
+    background-color:#e6e7e8; 
 }
 .contenedor-logins{
     display: grid;
@@ -51,4 +52,9 @@
     text-decoration: none;
     color: #fff;
     background-color: #0b151ebc;
+}
+.icono-logins{
+    font-size: 4rem;
+    text-align: center;
+    color: #0B151E;
 }
