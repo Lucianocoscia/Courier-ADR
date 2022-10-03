@@ -1,6 +1,4 @@
 /* Cotizador */
-/* NUEVOS ESTILOS PARA COTIZADOR  */
-
 
 .titulo-cotizador{
     padding-top: 3rem;
@@ -12,7 +10,6 @@
     column-gap: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
-
 }
 
 .contenedor-cotizador1{
@@ -37,9 +34,7 @@
 }
 .contenedor-muestroDatos{
     position: relative;
-    background-color:#0B151E ;
     background-color:#647BA5; 
-    color: #647BA5;
     color: #fff;
     padding:2rem;
     display: flex;
@@ -55,7 +50,6 @@
 }
 .botonCotizador{
     width: 300px;
-    /* padding-top: 10px; */
     transform: translateY(20px);
     border: none;
     background-color: #0B151E;
@@ -113,6 +107,7 @@ hr{
 }
 
 /* Notas del Cotizador */
+
 .nota{
     font-size: 19px;
     margin-bottom: 20px;
