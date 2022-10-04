@@ -57,12 +57,13 @@ footer p {
     color: #0B151E;
     opacity: 0.8;
 }
-.link-lkdn{
+
+footer p a{
     color: #fff;
     text-decoration: none;
     transition: .4s ease-in-out;
 }
-.link-lkdn:hover{
+footer p a:hover{
     color: #fff;
     opacity: 0.5;
 }
