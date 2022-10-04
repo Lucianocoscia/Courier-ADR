@@ -539,6 +539,7 @@ footer {
 
 footer p {
   margin-bottom: 0;
+  margin-left: 1rem;
 }
 
 .flecha-arriba {
@@ -572,6 +573,12 @@ footer p {
   margin-left: 1rem;
 }
 
+.img-footer-1 {
+  width: 50px;
+  height: 60px;
+  margin-right: 1rem;
+}
+
 /* Enlaces a wsp */
 .a-wsp {
   color: #000;
@@ -586,6 +593,7 @@ footer p {
 
 footer p a {
   color: #fff;
+  font-size: 12px;
   text-decoration: none;
   transition: .4s ease-in-out;
 }
