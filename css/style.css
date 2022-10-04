@@ -527,7 +527,6 @@ ul {
 /* Footer */
 footer {
   bottom: 0;
-  /* background: #F6F6F6; */
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -571,6 +570,12 @@ footer p {
   height: 40px;
   margin-right: 1rem;
   margin-left: 1rem;
+}
+
+.contenedor-img-footer {
+  width: 50px;
+  height: 100%;
+  overflow: hidden;
 }
 
 .img-footer-1 {
@@ -983,6 +988,9 @@ hr {
     font-size: 16px;
     text-align: justify;
   }
+  footer {
+    height: 100%;
+  }
   footer p {
     font-size: 16px;
     margin-left: 0.5rem;
@@ -1208,6 +1216,9 @@ hr {
   }
   .contenedor-form-text h4 {
     font-size: 16px;
+  }
+  footer {
+    height: 100%;
   }
   footer p {
     font-size: 14px;
